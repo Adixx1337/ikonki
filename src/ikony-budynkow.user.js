@@ -11,6 +11,8 @@
 // @match        https://operatorratunkowy.pl/*
 // @grant        none
 // @run-at       document-idle
+// @updateURL    https://raw.githubusercontent.com/Adixx1337/ikonki/main/src/ikony-budynkow.user.js
+// @downloadURL  https://raw.githubusercontent.com/Adixx1337/ikonki/main/src/ikony-budynkow.user.js
 // ==/UserScript==
 
 (function () {
