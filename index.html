@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instalacja - Ikony Budynków</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary: #2563eb;
@@ -25,16 +25,17 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
+            padding: 24px;
+            box-sizing: border-box;
         }
 
         .container {
-            text-align: center;
             background: var(--card-bg);
-            padding: 3rem 2rem;
-            border-radius: 24px;
+            padding: 4rem 2.5rem;
+            border-radius: 32px;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
             max-width: 440px;
-            width: 90%;
+            width: 100%;
             border: 1px solid rgba(255, 255, 255, 0.1);
             display: flex;
             flex-direction: column;
@@ -42,62 +43,88 @@
         }
 
         .icon-box {
-            width: 72px;
-            height: 72px;
+            width: 84px;
+            height: 84px;
             background: var(--primary);
-            border-radius: 20px;
-            margin-bottom: 1.5rem;
+            border-radius: 24px;
+            margin-bottom: 2rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 0 20px rgba(37, 99, 235, 0.3);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
         }
 
         h1 {
-            font-size: 1.875rem;
+            font-size: 2.25rem;
             font-weight: 800;
-            margin: 0 0 0.25rem;
-            letter-spacing: -0.025em;
+            margin: 0;
+            text-align: center;
+            letter-spacing: -0.05em;
         }
 
         .version {
             color: var(--text-muted);
-            font-size: 0.875rem;
-            margin-bottom: 2rem;
+            font-size: 0.8125rem;
+            margin-top: 0.75rem;
+            margin-bottom: 2.5rem;
             background: rgba(255, 255, 255, 0.05);
-            padding: 0.35rem 0.85rem;
+            padding: 0.4rem 1.1rem;
             border-radius: 99px;
-            font-weight: 500;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .desc {
             color: var(--text-muted);
-            margin-bottom: 2rem;
-            line-height: 1.5;
-            font-size: 0.9375rem;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+            font-size: 1rem;
+            text-align: center;
         }
 
+        /* PERFEKCYJNIE WYCENTROWANY PRZYCISK */
         .btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.75rem;
             background-color: var(--primary);
             color: white;
             text-decoration: none;
-            padding: 1rem 1.5rem;
-            border-radius: 12px;
-            font-weight: 600;
-            font-size: 1.0625rem;
-            transition: all 0.2s;
+            height: 64px;
+            border-radius: 18px;
+            font-weight: 700;
+            font-size: 1.125rem;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
             width: 100%;
-            box-sizing: border-box;
+            display: flex;
+            align-items: center;
             border: none;
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+            cursor: pointer;
+            padding: 0;
+        }
+
+        /* 3 RÓWNE KOLUMNY: BUFOR | TEKST | BUFOR */
+        .btn-content {
+            display: grid;
+            grid-template-columns: 50px 1fr 50px;
+            width: 100%;
+            align-items: center;
+        }
+
+        .btn-emoji {
+            font-size: 1.3rem;
+            justify-self: center;
+        }
+
+        .btn-text {
+            text-align: center;
+            justify-self: center;
         }
 
         .btn:hover {
             background-color: var(--primary-hover);
             transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(37, 99, 235, 0.4);
         }
 
         .btn:active {
@@ -105,45 +132,48 @@
         }
 
         .steps {
-            margin-top: 2.5rem;
+            margin-top: 3.5rem;
             width: 100%;
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 1.25rem;
         }
 
         .step {
             display: flex;
-            align-items: center;
-            gap: 0.85rem;
+            align-items: flex-start;
+            gap: 1.125rem;
             text-align: left;
-            font-size: 0.875rem;
+            font-size: 0.9375rem;
             color: var(--text-muted);
         }
 
         .step-num {
             background: rgba(255, 255, 255, 0.1);
             color: var(--text);
-            width: 24px;
-            height: 24px;
-            border-radius: 6px;
+            width: 26px;
+            height: 26px;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.75rem;
-            font-weight: 800;
+            font-size: 0.8125rem;
+            font-weight: 900;
             flex-shrink: 0;
+            margin-top: 2px;
         }
 
         .step b {
             color: var(--text);
+            font-weight: 700;
         }
 
         .footer {
-            margin-top: 2.5rem;
-            padding-top: 1.5rem;
+            margin-top: 3.5rem;
+            padding-top: 2rem;
             border-top: 1px solid rgba(255, 255, 255, 0.05);
             width: 100%;
+            text-align: center;
             font-size: 0.8125rem;
             color: var(--text-muted);
         }
@@ -151,34 +181,34 @@
         a.link {
             color: var(--primary);
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
         }
 
         a.link:hover {
             text-decoration: underline;
         }
 
-        /* Bg glow */
-        .glow {
+        /* Glow effect */
+        .bg-glow {
             position: fixed;
-            width: 40vw;
-            height: 40vw;
-            background: var(--primary);
-            filter: blur(120px);
-            opacity: 0.07;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60vw;
+            height: 60vw;
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, rgba(15, 23, 42, 0) 70%);
             z-index: -1;
-            border-radius: 50%;
+            pointer-events: none;
         }
     </style>
 </head>
 
 <body>
-    <div class="glow" style="top: -10%; left: -10%;"></div>
-    <div class="glow" style="bottom: -10%; right: -10%;"></div>
+    <div class="bg-glow"></div>
 
     <div class="container">
         <div class="icon-box">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
                 stroke-linecap="round" stroke-linejoin="round">
                 <path
                     d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
@@ -191,30 +221,33 @@
         <h1>Ikony Budynków</h1>
         <div class="version">v2.2.1 • Operator Ratunkowy</div>
 
-        <p class="desc">Zestaw profesjonalnych ikon budynków. <br>Kliknij poniższy przycisk, aby zainstalować.</p>
+        <p class="desc">Instalator zestawu customowych ikon.<br>Kliknij przycisk poniżej, aby dodać je do gry.</p>
 
         <a href="https://raw.githubusercontent.com/Adixx1337/ikonki/main/src/ikony-budynkow.user.js" class="btn">
-            <span>🚀</span>
-            <span>Zainstaluj skrypt</span>
+            <div class="btn-content">
+                <span class="btn-emoji">🚀</span>
+                <span class="btn-text">Zainstaluj skrypt</span>
+                <span class="btn-spacer"></span>
+            </div>
         </a>
 
         <div class="steps">
             <div class="step">
                 <div class="step-num">1</div>
-                <div>Zainstaluj rozszerzenie <b>Tampermonkey</b></div>
+                <div>Zainstaluj rozszerzenie <b>Tampermonkey</b> w przeglądarce.</div>
             </div>
             <div class="step">
                 <div class="step-num">2</div>
-                <div>Kliknij przycisk <b>Zainstaluj skrypt</b></div>
+                <div>Kliknij niebieski przycisk <b>Zainstaluj skrypt</b> powyżej.</div>
             </div>
             <div class="step">
                 <div class="step-num">3</div>
-                <div>W oknie skryptu kliknij <b>"Instaluj"</b></div>
+                <div>Potwierdź instalację przyciskiem <b>Instaluj</b> w oknie skryptu.</div>
             </div>
         </div>
 
         <div class="footer">
-            🎨 Autor: Adixx1337 • <a href="https://github.com/Adixx1337/ikonki" class="link">Kod źródłowy</a>
+            🎨 Adixx1337 • <a href="https://github.com/Adixx1337/ikonki" class="link">Projekt na GitHub</a>
         </div>
     </div>
 </body>
