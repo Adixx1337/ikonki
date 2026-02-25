@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         Ikony Budynków - Operator Ratunkowy
-// @namespace    https://ikonkioperator.cba.pl/
+// @namespace    https://github.com/Adixx1337/ikonki
 // @version      2.2.1
 // @description  Podmienia ikony budynków na customowe ikony w grze Operator Ratunkowy (stały rozmiar)
 // @author       Adixx1337
-// @homepageURL  https://ikonkioperator.cba.pl/
-// @supportURL   https://ikonkioperator.cba.pl/
+// @homepageURL  https://github.com/Adixx1337/ikonki
+// @supportURL   https://github.com/Adixx1337/ikonki
 // @icon         https://raw.githubusercontent.com/Adixx1337/ikonki/main/favicon.svg
 // @match        https://www.operatorratunkowy.pl/*
 // @match        https://operatorratunkowy.pl/*
@@ -59,3 +59,4 @@
     function _0xk() { _0xj(); var p = document.querySelector('.leaflet-marker-pane'); if (p) { var t = null; new MutationObserver(function () { if (t) clearTimeout(t); t = setTimeout(_0xj, 300); }).observe(p, { childList: !0, subtree: !0 }); } }
     if (document.readyState === 'complete') { setTimeout(_0xk, 500); } else { window.addEventListener('load', function () { setTimeout(_0xk, 500); }); }
 })();
+
