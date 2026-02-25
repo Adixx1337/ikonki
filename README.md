@@ -17,11 +17,11 @@ Customowe ikony budynków podmieniane w grze **[Operator Ratunkowy](https://www.
 - [Opera](https://addons.opera.com/pl/extensions/details/tampermonkey-beta/)
 
 ### 2. Zainstaluj skrypt
-Kliknij poniższy link, aby zainstalować skrypt automatycznie:
+Kliknij poniższy link — Tampermonkey automatycznie zaproponuje instalację:
 
-👉 **[Zainstaluj Ikony Budynków](https://github.com/Adixx1337/ikonki/releases/tag/Ikonki)**
+👉 **[Zainstaluj Ikony Budynków](https://github.com/Adixx1337/ikonki/raw/main/src/ikony-budynkow.user.js)**
 
-Tampermonkey powinien automatycznie rozpoznać skrypt i zaproponować instalację.
+Lub pobierz ze strony [Releases](https://github.com/Adixx1337/ikonki/releases/tag/Ikonki).
 
 ### 3. Gotowe!
 Wejdź na [operatorratunkowy.pl](https://www.operatorratunkowy.pl/) — ikony budynków zostaną automatycznie podmienione! 🏗️
@@ -87,6 +87,7 @@ Odwiedź naszą stronę, aby zobaczyć i pobrać wszystkie ikony:
 
 ```
 icons/
+├── ikony-engine.js              # Silnik podmienający ikony (zaobfuskowany)
 ├── akademia_policyjna.png       # Ikona: Akademia Policyjna
 ├── akademia_ratownictwa.png     # Ikona: Akademia Ratownictwa Med.
 ├── centrum_powiadamiania.png    # Ikona: Centrum Powiadamiania
@@ -144,4 +145,3 @@ icons/
 ---
 
 © 2026 Adixx1337 — Wszelkie prawa zastrzeżone.
-
