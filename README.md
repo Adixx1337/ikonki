@@ -132,7 +132,6 @@ icons/
 - Skrypt działa **tylko** na stronie [operatorratunkowy.pl](https://www.operatorratunkowy.pl/)
 - Wymaga rozszerzenia **Tampermonkey** w przeglądarce
 - Ikony są w formacie **PNG 32x32px** z przezroczystym tłem
-- Konto na GoogieHost wymaga logowania co **15 dni**, aby uniknąć dezaktywacji
 
 ---
 
