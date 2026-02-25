@@ -87,7 +87,6 @@ Odwiedź naszą stronę, aby zobaczyć i pobrać wszystkie ikony:
 
 ```
 icons/
-├── ikony-engine.js              # Silnik podmienający ikony (zaobfuskowany)
 ├── akademia_policyjna.png       # Ikona: Akademia Policyjna
 ├── akademia_ratownictwa.png     # Ikona: Akademia Ratownictwa Med.
 ├── centrum_powiadamiania.png    # Ikona: Centrum Powiadamiania
@@ -145,3 +144,4 @@ icons/
 ---
 
 © 2026 Adixx1337 — Wszelkie prawa zastrzeżone.
+
