@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalacja - Ikony Budynków</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1d4ed8;
+            --primary-hover: #1e40af;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            background: var(--card-bg);
+            padding: 3rem;
+            border-radius: 24px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            max-width: 500px;
+            width: 90%;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+
+        .icon-bg {
+            width: 80px;
+            height: 80px;
+            background: var(--primary);
+            border-radius: 20px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 20px rgba(29, 78, 216, 0.4);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 0 0 0.5rem;
+            letter-spacing: -0.025em;
+        }
+
+        .version {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            margin-bottom: 2rem;
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.25rem 0.75rem;
+            border-radius: 99px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            cursor: pointer;
+            border: none;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .steps {
+            margin-top: 2.5rem;
+            text-align: left;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        .step {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .step-num {
+            background: var(--primary);
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        a.link {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a.link:hover {
+            text-decoration: underline;
+        }
+
+        /* Particles / Decorative circles */
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background: var(--primary);
+            filter: blur(80px);
+            opacity: 0.1;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle" style="width: 300px; height: 300px; top: -150px; left: -150px;"></div>
+    <div class="circle" style="width: 300px; height: 300px; bottom: -150px; right: -150px;"></div>
+
+    <div class="container">
+        <div class="icon-bg">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                </path>
+                <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
+                <polyline points="7.5 19.79 7.5 14.63 3 12"></polyline>
+                <polyline points="21 12 16.5 14.63 16.5 19.79"></polyline>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+        </div>
+
+        <h1>Ikony Budynków</h1>
+        <div class="version">Wersja 2.2.1 • Operator Ratunkowy</div>
+
+        <p style="color: var(--text-muted); margin-bottom: 2.5rem;">Kliknij poniższy przycisk, aby zainstalować zestaw
+            ikon w rozszerzeniu Tampermonkey.</p>
+
+        <a href="https://raw.githubusercontent.com/Adixx1337/ikonki/main/src/ikony-budynkow.user.js" class="btn">
+            <span>🚀 Zainstaluj skrypt</span>
+        </a>
+
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">1</div>
+                <div>Upewnij się, że masz zainstalowane rozszerzenie <b>Tampermonkey</b>.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div>Kliknij przycisk powyżej.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div>W oknie Tampermonkey które się pojawi, wybierz <b>"Instaluj"</b>.</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            🎨 Autor: Adixx1337 • <a href="https://github.com/Adixx1337/ikonki" class="link">Repozytorium GitHub</a>
+        </div>
+    </div>
+</body>
+
+</html>
