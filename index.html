@@ -7,26 +7,16 @@
     <title>Instalacja - Ikony Budynków</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
-        /* RESET I POPRAWKA SZEROKOŚCI */
         * {
             box-sizing: border-box;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        :root {
-            --primary: #2563eb;
-            --primary-hover: #1d4ed8;
-            --bg: #0f172a;
-            --card-bg: #1e293b;
-            --text: #f8fafc;
-            --text-muted: #94a3b8;
+            margin: 0;
+            padding: 0;
         }
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            margin: 0;
+            background-color: #0f172a;
+            color: #f8fafc;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -35,24 +25,22 @@
         }
 
         .container {
-            background: var(--card-bg);
+            background: #1e293b;
             padding: 3rem 2rem;
-            border-radius: 32px;
+            border-radius: 24px;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
             max-width: 400px;
             width: 100%;
             border: 1px solid rgba(255, 255, 255, 0.1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            text-align: center;
         }
 
         .icon-box {
-            width: 80px;
-            height: 80px;
-            background: var(--primary);
-            border-radius: 22px;
-            margin-bottom: 1.5rem;
+            width: 72px;
+            height: 72px;
+            background: #2563eb;
+            border-radius: 18px;
+            margin: 0 auto 1.5rem;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -60,87 +48,77 @@
         }
 
         h1 {
-            font-size: 2rem;
+            font-size: 1.75rem;
             font-weight: 800;
-            margin: 0;
-            text-align: center;
-            letter-spacing: -0.05em;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.025em;
         }
 
         .version {
-            color: var(--text-muted);
+            display: inline-block;
+            color: #94a3b8;
             font-size: 0.8125rem;
-            margin-top: 0.5rem;
             margin-bottom: 2rem;
             background: rgba(255, 255, 255, 0.05);
-            padding: 0.35rem 0.9rem;
-            border-radius: 99px;
-            font-weight: 700;
+            padding: 0.35rem 0.75rem;
+            border-radius: 20px;
+            font-weight: 600;
         }
 
         .desc {
-            color: var(--text-muted);
+            color: #94a3b8;
             margin-bottom: 2.5rem;
             line-height: 1.5;
             font-size: 0.9375rem;
-            text-align: center;
         }
 
-        /* PRZYCISK: TERAZ JUŻ NIE WYSTAJE */
+        /* PRZYCISK CZYSZCZONY ZE WSZYSTKIEGO */
+        .btn-wrapper {
+            padding: 0 10px;
+            /* Margines bezpieczeństwa wewnątrz karty */
+            width: 100%;
+        }
+
         .btn {
-            position: relative;
-            background-color: var(--primary);
+            display: block;
+            background-color: #2563eb;
             color: white;
             text-decoration: none;
-            height: 60px;
-            border-radius: 15px;
+            padding: 18px 0;
+            border-radius: 12px;
             font-weight: 700;
-            font-size: 1.125rem;
-            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 1.0625rem;
+            transition: background 0.2s, transform 0.2s;
             width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             border: none;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            overflow: hidden;
-        }
-
-        /* RAKIETA PŁYWAJĄCA: NIE PRZESUWA TEKSTU */
-        .btn-emoji {
-            position: absolute;
-            left: 20px;
-            font-size: 1.25rem;
         }
 
         .btn:hover {
-            background-color: var(--primary-hover);
+            background-color: #1d4ed8;
             transform: translateY(-2px);
-            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
         }
 
         .steps {
             margin-top: 2.5rem;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 1.125rem;
+            text-align: left;
         }
 
         .step {
             display: flex;
             align-items: flex-start;
-            gap: 0.75rem;
+            gap: 12px;
+            margin-bottom: 12px;
             font-size: 0.875rem;
-            color: var(--text-muted);
+            color: #94a3b8;
         }
 
         .step-num {
             background: rgba(255, 255, 255, 0.1);
-            color: var(--text);
-            width: 24px;
-            height: 24px;
-            border-radius: 6px;
+            color: white;
+            width: 22px;
+            height: 22px;
+            border-radius: 5px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -150,41 +128,24 @@
         }
 
         .footer {
-            margin-top: 3rem;
+            margin-top: 2.5rem;
             padding-top: 1.5rem;
             border-top: 1px solid rgba(255, 255, 255, 0.05);
-            width: 100%;
-            text-align: center;
             font-size: 0.75rem;
-            color: var(--text-muted);
+            color: #94a3b8;
         }
 
         a.link {
-            color: var(--primary);
+            color: #2563eb;
             text-decoration: none;
-            font-weight: 600;
-        }
-
-        .bg-glow {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100vw;
-            height: 100vh;
-            background: radial-gradient(circle, rgba(37, 99, 235, 0.05) 0%, transparent 70%);
-            z-index: -1;
-            pointer-events: none;
         }
     </style>
 </head>
 
 <body>
-    <div class="bg-glow"></div>
-
     <div class="container">
         <div class="icon-box">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
                 stroke-linecap="round" stroke-linejoin="round">
                 <path
                     d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
@@ -197,12 +158,13 @@
         <h1>Ikony Budynków</h1>
         <div class="version">v2.2.1 • Operator Ratunkowy</div>
 
-        <p class="desc">Instalator zestawu ikon.<br>Kliknij przycisk, aby dodać do gry.</p>
+        <p class="desc">Zainstaluj skrypt, aby podmienić ikony budynków na mapie w grze.</p>
 
-        <a href="https://raw.githubusercontent.com/Adixx1337/ikonki/main/src/ikony-budynkow.user.js" class="btn">
-            <span class="btn-emoji">🚀</span>
-            <span class="btn-text">Zainstaluj skrypt</span>
-        </a>
+        <div class="btn-wrapper">
+            <a href="https://raw.githubusercontent.com/Adixx1337/ikonki/main/src/ikony-budynkow.user.js" class="btn">
+                Zainstaluj skrypt
+            </a>
+        </div>
 
         <div class="steps">
             <div class="step">
@@ -211,16 +173,16 @@
             </div>
             <div class="step">
                 <div class="step-num">2</div>
-                <div>Kliknij <b>Zainstaluj skrypt</b> powyżej.</div>
+                <div>Kliknij niebieski przycisk powyżej.</div>
             </div>
             <div class="step">
                 <div class="step-num">3</div>
-                <div>Kliknij <b>"Instaluj"</b> w oknie skryptu.</div>
+                <div>Potwierdź instalację w oknie, które się pojawi.</div>
             </div>
         </div>
 
         <div class="footer">
-            🎨 Adixx1337 • <a href="https://github.com/Adixx1337/ikonki" class="link">Projekt GitHub</a>
+            🎨 Adixx1337 • <a href="https://github.com/Adixx1337/ikonki" class="link">Kod na GitHub</a>
         </div>
     </div>
 </body>
