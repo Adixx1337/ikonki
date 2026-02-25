@@ -2,7 +2,7 @@
 
 ![Version](https://img.shields.io/badge/wersja-2.2.1-blue)
 ![Icons](https://img.shields.io/badge/ikony-21-green)
-![License](https://img.shields.io/badge/licencja-All%20Rights%20Reserved-red)
+![License](https://img.shields.io/badge/licencja-MIT-green)
 
 Customowe ikony budynków podmieniane w grze **[Operator Ratunkowy](https://www.operatorratunkowy.pl/)** za pomocą skryptu Tampermonkey.
 
@@ -14,11 +14,12 @@ Customowe ikony budynków podmieniane w grze **[Operator Ratunkowy](https://www.
 - [Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 - [Firefox](https://addons.mozilla.org/pl/firefox/addon/tampermonkey/)
 - [Edge](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd)
+- [Opera](https://addons.opera.com/pl/extensions/details/tampermonkey-beta/)
 
 ### 2. Zainstaluj skrypt
 Kliknij poniższy link, aby zainstalować skrypt automatycznie:
 
-👉 **[Zainstaluj Ikony Budynków](https://github.com/Adixx1337/icons/releases/tag/IB)**
+👉 **[Zainstaluj Ikony Budynków](https://github.com/Adixx1337/ikonki/releases/tag/Ikonki)**
 
 Tampermonkey powinien automatycznie rozpoznać skrypt i zaproponować instalację.
 
@@ -118,7 +119,6 @@ icons/
 ### v2.2.1 (2026-02-25)
 - ✅ Dodano ikonę **Komisariat Policji z WRD** (Wydział Ruchu Drogowego)
 - ✅ Obsługa ikon `spec_*` z gry
-- ✅ Zaobfuskowany silnik (`ikony-engine.js`)
 
 ### v2.2 (2026-02-24)
 - ✅ 20 ikon budynków
