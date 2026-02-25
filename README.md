@@ -19,7 +19,7 @@ Customowe ikony budynków podmieniane w grze **[Operator Ratunkowy](https://www.
 ### 2. Zainstaluj skrypt
 Kliknij poniższy link — Tampermonkey automatycznie zaproponuje instalację:
 
-👉 **[Zainstaluj Ikony Budynków](https://github.com/Adixx1337/ikonki/raw/main/src/ikony-budynkow.user.js)**
+👉 **[Zainstaluj Ikony Budynków](https://raw.githubusercontent.com/Adixx1337/ikonki/main/src/ikony-budynkow.user.js)**
 
 Lub pobierz ze strony [Releases](https://github.com/Adixx1337/ikonki/releases/tag/Ikonki).
 
